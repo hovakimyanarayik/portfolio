@@ -9,9 +9,6 @@ export function usePagination(data) {
         size: +searchParams.get('size') || 6
     })
     useEffect(() => {
-        // if(searchParams.get('page') == pageParams.page && searchParams.get('size') == pageParams.size) {
-        //     return;
-        // }
         setPageParams({
             page: +searchParams.get('page') || 1,
             size: +searchParams.get('size') || 6
