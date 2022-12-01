@@ -9,13 +9,12 @@ const NavBar = () => {
     return ( 
         <AnchorsWrapper>
             <Link>
-                <NavLink to='/'>Work</NavLink>
+                <NavLink to='/'>Greeting</NavLink>
             </Link>
             <CustomDivider />
             <Link>
                 <NavLink to='/about'>About</NavLink>
             </Link>
-            
         </AnchorsWrapper>
      );
 }
@@ -29,6 +28,10 @@ const AnchorsWrapper = styled(Anchor)`
     background-color: white;
     border-radius: 5px;
     border: 1px solid lightgray;
+    position: absolute;
+    right: 0;
+    top: 30vh;
+    z-index: 100;
 `
  
 export default NavBar;

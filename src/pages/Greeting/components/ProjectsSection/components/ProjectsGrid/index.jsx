@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import WorkItem from '../WorkItem';
+import ProjectItem from './components/ProjectItem';
 
 
-const WorksGrid = ({data}) => {
+const ProjectsGrid = ({data}) => {
     return ( 
         <Grid id='works' data={data}>
             {data.map(item => (
-                <WorkItem key={item.id} {...item} />
+                <ProjectItem key={item.id} {...item} />
             ))}
         </Grid>
      );
@@ -15,11 +15,11 @@ const WorksGrid = ({data}) => {
 
 const Grid = styled.div`
     width: 100%;
+    max-width: 1000px;
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 300px;
-    gap: 10px;
+    grid-auto-rows: 35vh;
 `
  
-export default WorksGrid;
+export default ProjectsGrid;

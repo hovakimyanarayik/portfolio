@@ -1,11 +1,16 @@
 import { useRoutes } from "react-router-dom";
 import About from "./pages/About";
-import Work from "./pages/Work";
+import AllProjects from "./pages/AllProjects";
+import Greeting from "./pages/Greeting";
 
 const routes = [
     {
         path: '',
-        element: <Work />
+        element: <Greeting />
+    },
+    {
+        path: 'allProjects',
+        element: <AllProjects />
     },
     {
         path: 'about',
