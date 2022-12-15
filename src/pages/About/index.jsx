@@ -14,6 +14,7 @@ const About = () => {
             left: 0,
             behavior: 'smooth'
           })
+          document.title = 'About'
     }, [])
 
     return ( 

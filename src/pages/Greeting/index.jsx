@@ -13,6 +13,7 @@ const Greeting = () => {
             left: 0,
             behavior: 'smooth'
           })
+          document.title = 'Welcome'
     }, [])
 
     return ( 

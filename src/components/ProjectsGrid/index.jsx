@@ -24,6 +24,9 @@ const Grid = styled.div`
     @media (max-width: 750px) {
         grid-template-columns: 1fr;
     }
+    @media (max-width: 500px) {
+        grid-auto-rows: 26vh;
+    }
 `
  
 export default ProjectsGrid;
