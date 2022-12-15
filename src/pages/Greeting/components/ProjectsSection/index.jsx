@@ -1,23 +1,15 @@
 import React from 'react';
-import { usePagination } from '../../../../hooks/usePagination';
+import { useSelector } from 'react-redux';
+import ProjectsGrid from '../../../../components/ProjectsGrid'
 import mockData from '../../../../mock/MOCK_DATA.json'
 import AllProjectsButton from './components/AllProjectsButton';
-import Pagination from './components/Pagination';
-import ProjectsGrid from './components/ProjectsGrid';
 
 
 const ProjectsSection = () => {
-    // const {currentPage, pageSize, onPageChange, chunkedData} = usePagination(mockData)
+    const {projects} = useSelector(store => store.projects)
     return (
         <>
-            <ProjectsGrid data={mockData.slice(0, 6)} />
-            <AllProjectsButton />
-            {/* <Pagination 
-                total={mockData.length} 
-                currentPage={currentPage} 
-                onChange={onPageChange}
-                pageSize={pageSize}
-            /> */}
+            <ProjectsGrid data={projects} />
         </>
     );
 }

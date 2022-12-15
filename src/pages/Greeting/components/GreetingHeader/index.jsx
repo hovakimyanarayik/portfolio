@@ -1,23 +1,27 @@
 import React from 'react';
-import { Image } from 'antd';
 import styled from 'styled-components';
 
 
 const GreetingHeader = () => {
     return ( 
-        <CustomImage 
-            id='title'
-            className='animate__animated animate__fadeIn'
-            width='100%'
-            preview={false}
-            src="https://thumbs.dreamstime.com/b/hi-there-inscription-handwritten-lettering-illustration-black-vector-text-speech-bubble-simple-outline-marker-style-hi-there-194142459.jpg"  
-        />
+        <StyledHeader className='animate__animated animate__slideInDown'>
+            <StyledHeaderContent>Welcome</StyledHeaderContent>
+        </StyledHeader>
      );
 }
 
-const CustomImage = styled(Image)`
-    border-radius: 20px;
-    overflow: hidden;
+const StyledHeader = styled.div`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
+
+const StyledHeaderContent = styled.h1`
+    font-size: var(--fs-xlg);
+    text-shadow: var(--shadow);
+`
+
  
 export default GreetingHeader;

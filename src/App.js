@@ -1,29 +1,35 @@
 import "./App.css";
 import 'animate.css';
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./Routes";
 import { ConfigProvider } from "antd";
 import styled from "styled-components";
-import NavBar from "./components/Navbar";
+import { useDispatch } from "react-redux";
+import { getProjects } from "./slices/ProjectsSlice";
+import Layout from "./components/Layout";
 
 function App() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getProjects())
+  }, [])
   return (
     <ConfigProvider >
         <BrowserRouter>
-          <NavBar />
-          <AppContainer>
-            <Routes />
-          </AppContainer>
+          <Layout>
+            <AppContainer>
+              <Routes />
+            </AppContainer>
+          </Layout>
         </BrowserRouter>
     </ConfigProvider>
   );
 }
 
 const AppContainer = styled.div`
-  /* widht: 100%;
-  max-width: 1100px; */
-  width: 85vw;
+  width: 80vw;
   margin: 0 auto;
 `;
 

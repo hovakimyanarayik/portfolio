@@ -3,18 +3,28 @@ import styled from 'styled-components';
 import GreetingText from './components/GreetingText';
 import GreetingHeader from './components/GreetingHeader';
 import ProjectsSection from './components/ProjectsSection';
+import { useEffect } from 'react';
 
 const Greeting = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })
+    }, [])
+
     return ( 
-        <InfoContainer>
+        <PageWrapper>
             <GreetingHeader />
             <GreetingText />
             <ProjectsSection />
-        </InfoContainer>
+        </PageWrapper>
      );
 }
 
-const InfoContainer = styled.div`
+const PageWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;

@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import About from "./pages/About";
-import AllProjects from "./pages/AllProjects";
 import Greeting from "./pages/Greeting";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const routes = [
     {
@@ -9,12 +9,12 @@ const routes = [
         element: <Greeting />
     },
     {
-        path: 'allProjects',
-        element: <AllProjects />
-    },
-    {
         path: 'about',
         element: <About />
+    },
+    {
+        path: '*',
+        element: <NotFoundPage />
     }
 ]
 

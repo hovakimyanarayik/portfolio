@@ -5,9 +5,9 @@ import ProjectItem from './components/ProjectItem';
 
 const ProjectsGrid = ({data}) => {
     return ( 
-        <Grid id='works' data={data}>
-            {data.map(item => (
-                <ProjectItem key={item.id} {...item} />
+        <Grid data={data}>
+            {data.map((item, idx) => (
+                <ProjectItem key={item.id} index={idx}  {...item} />
             ))}
         </Grid>
      );
@@ -20,6 +20,10 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 35vh;
+    
+    @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
 `
  
 export default ProjectsGrid;
