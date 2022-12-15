@@ -1,4 +1,3 @@
-import Paragraph from 'antd/es/typography/Paragraph';
 import React from 'react';
 import styled from 'styled-components';
 import useElementOnScreen from '../../../../hooks/useElementOnScreen';
@@ -27,7 +26,7 @@ const GreetingText = () => {
      );
 }
 
-const CustomParagraph = styled(Paragraph)`
+const CustomParagraph = styled.p`
     max-width: 550px;
     text-align: center;
     font-size: var(--fs-lg);

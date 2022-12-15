@@ -34,15 +34,11 @@ const IntrodusionWrapper = styled.div`
 
     @media (max-width: 650px) {
         justify-content: center;
+        & > p {
+            line-height: 80px;
+        }
     }
 
 `
-
-// const IntroducionText = styled.h1`
-    // max-width: 200px;
-    // font-size: var(--fs-xlg);
-    // font-weight: var(--fw-bold);
-    // line-height: 100px;
-// `
  
 export default Introducion;

@@ -1,4 +1,3 @@
-import { Typography } from 'antd';
 import React from 'react';
 import styled from 'styled-components';
 import SourceCodeButton from '../SourceCodeButton';
@@ -25,7 +24,7 @@ const StyledProjectCover = styled.div`
     position: relative;
 `
 
-const StyledTitle = styled(Typography.Paragraph)`
+const StyledTitle = styled.p`
     font-size: var(--fs-lg);
     font-weight: var(--fw-light);
     color: white;

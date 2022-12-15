@@ -1,4 +1,3 @@
-import { Divider } from "antd";
 import styled from "styled-components";
 import Footer from "./components/Footer";
 import LayoutLeftSide from "./components/LayoutLeftSide";

@@ -3,7 +3,6 @@ import 'animate.css';
 import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./Routes";
-import { ConfigProvider } from "antd";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
 import { getProjects } from "./slices/ProjectsSlice";
@@ -14,9 +13,9 @@ function App() {
 
   useEffect(() => {
     dispatch(getProjects())
+    // eslint-disable-next-line
   }, [])
   return (
-    <ConfigProvider >
         <BrowserRouter>
           <Layout>
             <AppContainer>
@@ -24,7 +23,6 @@ function App() {
             </AppContainer>
           </Layout>
         </BrowserRouter>
-    </ConfigProvider>
   );
 }
 
