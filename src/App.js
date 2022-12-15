@@ -29,6 +29,10 @@ function App() {
 const AppContainer = styled.div`
   width: 80vw;
   margin: 0 auto;
+
+  @media (max-width: 750px) {
+    overflow: hidden;
+  }
 `;
 
 export default App;
