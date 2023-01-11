@@ -17,6 +17,10 @@ const GreetingText = () => {
                 className={isOnScreen ? 'animate__animated animate__fadeInLeft' : 'animate__animated animate__fadeOutRight'}
             >
                 I'm Arayik Hovakimyan, a Front-End Developer based in Yerevan.
+                <br />
+                Now I am exploring Back-End programming languages and tools like NodeJS, ExpressJS etc.
+                I will become a Full-Stack Developer in the near future.
+                <br />
                 I describe myself as a passionate developer who loves coding, open source, and the web platform.
                 <br />
                 Aside from my job, I like to create and contribute to open source projects. 

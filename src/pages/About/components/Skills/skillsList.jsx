@@ -1,5 +1,16 @@
-import { FaReact } from "react-icons/fa";
-import {SiCss3, SiGit, SiHtml5, SiJavascript, SiJest, SiRedux, SiTestinglibrary, SiTypescript, SiWebpack} from 'react-icons/si'
+import {FaNode, FaReact} from "react-icons/fa";
+import {
+    SiCss3,
+    SiExpress,
+    SiGit,
+    SiHtml5,
+    SiJavascript,
+    SiJest, SiMongodb,
+    SiRedux,
+    SiTestinglibrary,
+    SiTypescript,
+    SiWebpack
+} from 'react-icons/si'
 
 const skillsList = [
     {
@@ -13,6 +24,18 @@ const skillsList = [
     {
         title: 'TypeScript',
         icon: <SiTypescript />
+    },
+    {
+        title: 'Node JS',
+        icon: <FaNode />
+    },
+    {
+        title: 'Express JS',
+        icon: <SiExpress />
+    },
+    {
+        title: 'MongoDB',
+        icon: <SiMongodb />
     },
     {
         title: 'Redux / Redux-Toolkit',

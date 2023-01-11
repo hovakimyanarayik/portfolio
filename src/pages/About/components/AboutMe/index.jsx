@@ -4,6 +4,7 @@ import { FaSpaceShuttle } from 'react-icons/fa'
 
 const about = [
     'Experienced  Front-End Developer based in Yerevan, Armenia.',
+    'Continues to be actively educated.',
     'Bachelor degree as Engineer in National Polytechnical Univercity of Armenia.',
     'Fluent with English and Russian.',
     'Team gamer.',
